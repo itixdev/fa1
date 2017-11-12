@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 import './App.css';
+import ContactForm from "./components/Form";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <p className="App-intro">
           Инструкции ... To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <ContactForm onSubmit={this.submit} />
       </div>
     );
   }
